@@ -1,0 +1,15 @@
+## Interface: 110100
+## Author: Trevor Atlas
+## Version: 1.0
+## Title: |cff1784d1Yes|r
+## Notes: User Interface Enhancements
+## IconTexture: Interface\Addons\Yes\media\yes
+
+## SavedVariables: YesSavedVariables
+
+## LoadManagers: AddonLoader
+## X-LoadOn-Always: delayed
+
+init.lua
+media.lua
+lib.lua
