@@ -1,5 +1,9 @@
 print("Yes init loaded")
 
+global type BigInteger = number
+
+local a: BigInteger = 123
+
 global interface YesSettings
   version: number
 end
@@ -7,8 +11,11 @@ global YesSavedVariables: YesSettings
 
 global YesSavedVariables = YesSavedVariables or {}
 
-local version = C_AddOns.GetAddOnMetadata("Yes", "Version")
+C_Spell.DoesSpellExist()
 
+local version = C_AddOns.GetAddOnInfo("Yes").version
+
+local b = C_AccountStore.GetCategoryInfo(1)
 
 local defaultSettings = {
     version = version,
@@ -37,4 +44,5 @@ end
 }
 
 M:addSlashCommand('RELOAD', '/rl', function()ReloadUI()end)
+
 

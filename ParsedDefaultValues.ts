@@ -1,0 +1,16 @@
+export const DefaultValue = {
+  '0': '0',
+  '1': 1,
+  '14': 14,
+  '718': 718,
+  true: true,
+  None: 'None',
+  ', ': ', ',
+  LeftButton: 'LeftButton',
+  '-1': -1,
+  '0.5': 0.5,
+  Single: 'Single',
+  WOWGUID_NULL: 'WOWGUID_NULL',
+  Reagent: 'Reagent',
+  Item: 'Item',
+} as const;
